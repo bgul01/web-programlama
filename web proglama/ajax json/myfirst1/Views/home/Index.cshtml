@@ -1,0 +1,63 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>ilk proje</title>
+    <meta charset="utf-8"/>
+</head>
+<body>
+    <h1>json oğreniyoruz</h1>
+
+
+
+    <script type="text/javascript">
+
+        var person = {
+            "person1" : {
+                "firstname": "Can",
+                "lastname": "boz",
+                "age": 25,
+
+            },
+
+            "person2": {
+
+                "ad": "berat",
+                "soyad": "şevket"
+            }
+        }
+
+        console.log(person.person1.age);
+
+
+        var kisi = {
+
+            "adress": {
+
+                "street": "nuri",
+                "distrcit": "mehmet"
+
+            },
+            "hobbibes": [
+                "futbol","book"
+            ],
+            "cars": [
+                {
+                    "mark" : "toyota"
+                },
+
+                {
+                    "mark":"mercedes"
+                }
+
+
+            ]
+        }
+    </script>
+
+</body>
+</html>
+
