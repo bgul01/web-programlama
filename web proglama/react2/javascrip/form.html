@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+
+<input id="ad" onblur="kontrol()" type="text" placeholder="text" name="">
+
+
+<br>
+
+<div id="sonuc"></div>	
+
+<br>
+
+<select id="udemy" onchange="kontrol1()">
+	
+	<option>merhaba</option>
+	<option>ml</option>
+	<option>vl</option>
+</select>
+
+
+<div id="sonuc1"></div>
+
+<br>
+
+<input onfocus="islem3(this)" onfocusout="islem4(this)" type="text" name="">
+
+
+ <!-- yukardanin aynısı <input onfocusin="islem3(this)" type="text" name=""> --->
+<br>
+
+<br>
+
+<br>
+<form onsubmit="gondr()" onreset="rese()">
+<input id="mal" required="" oninvalid="alarm()" type="text" name="">
+<button type="submit">tıkla bakam</button>
+<br>
+<input type="text" name="">
+<button type="reset">tıkla bakam</button>
+<div id="alr"></div>
+
+<button type="submit" >gönder</button>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<input id="arama" type="search" onsearch="ara()" name="">
+
+<script type="text/javascript">
+	// onblur tıklamadan çıkıldıtkan sonraki 
+function kontrol(){
+
+	var e  = document.getElementById("ad").value;
+
+	var say = e.length;
+	if (say<6) {
+document.getElementById("sonuc").innerHTML="6 dan büyük olmalı";
+
+
+	}
+}
+
+
+
+
+//onchange  :  seçildiğinde olay olusacak
+ 
+  function kontrol1 () {
+
+
+    var x = document.getElementById("udemy").value;
+     document.getElementById("sonuc1").innerHTML = x;
+         
+  	// body...
+  }
+
+  function islem3(x) {
+
+
+  	x.style.backgroundColor="red";
+  	// body...
+  }
+
+  function islem4(x) {
+
+
+  	x.style.backgroundColor="white";
+  	// body...
+  }
+
+
+// onvalid lütfen bu alanı doldurun alanını özellşetiriyoruz
+function alarm() {
+ document.getElementById("alr").innerHTML="lütfen bişi gir ";
+}
+
+function rese() {
+
+	 document.getElementById("alr").innerHTML="form temizlendir ";
+	// body...
+}
+
+function ara() {
+	var h  = document.getElementById("arama");
+	 document.getElementById("alr").innerHTML=" aranan kelime : " + h.value;
+}
+
+
+function gondr() {
+
+ alert("başarıyla gitti")
+	
+}
+
+</script>
+</body>
+</html>

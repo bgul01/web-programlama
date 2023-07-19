@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JS Eğitimi</title>
+
+	<style type="text/css">
+
+
+
+
+</style>
+
+</head>
+<body>
+
+	<ul id="udemy">
+		<li>Php</li>
+		<li>Bootstrap4</li>
+		<li>JQuery</li>
+		<li>Javascript</li>
+	</ul>
+
+		
+	<button onclick="islem()">Sil</button>
+	<button onclick="ekle()">Ekle</button>
+	<button onclick="degistir()">Değiştir</button>
+	<script type="text/javascript">
+		
+	/*
+
+	replaceChild
+	*/
+
+
+	function islem(){
+
+
+		var list=document.getElementById("udemy");
+		console.log(list);
+		list.removeChild(list.childNodes[0])
+	}
+
+	function ekle(){
+
+		var e=document.createElement("LI");
+		console.log(e);
+		var x=document.createTextNode("Wordpressss");
+		console.log(e);
+		e.appendChild(x);
+		console.log(e);
+		document.getElementById("udemy").appendChild(e);
+
+
+	}
+
+	function degistir(){
+
+		var t=document.createTextNode("Emrah");
+		console.log(t);
+		var ekles=document.getElementById("udemy").childNodes[1];
+		console.log(ekles);
+		ekles.replaceChild(t,ekles.childNodes[0])
+
+	}
+	
+
+</script>
+</body>
+</html>

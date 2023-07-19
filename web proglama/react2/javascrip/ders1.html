@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>java1</title>
+
+<!--<script type="text/javascript" src="ders1.js"></script>--->
+
+</head>
+<body>
+
+ <iframe src="bom.html"></iframe>
+
+	
+
+	<script type="text/javascript" language="javascript">
+	
+
+
+	var UserName = "merhaba"
+	var Password  = 123456
+
+	
+
+
+	if (UserName == "merhaba" && Password==123456) {
+		console.log("giriş başarılı");
+	} else  {
+
+		console.log ("girirş başarısız");
+	}
+
+
+
+	var sayi1= 5;
+	var sayi2= 6 ;
+	var sayi3 = 25;
+
+// document.write("ekrana çıktı sğlar") document.writeln boşluk bırakarak yazar
+
+
+// for (i  =0 ; i<10 ; i++) { burayada yazıdrmak istediği kod yazılacak }
+
+
+ 
+
+ for (i= 1; i <= 6; i++){
+
+ 	document.write("<h"+i+">merhaba dünyalı </h"+i+">");
+ } 
+
+ for (var l = 1; l <= 10; l++) {
+if (l%2 ==0) {
+ 
+
+ 	document.write(l+ "çift </br>");
+ }else {
+
+ 	document.write(l+ "tek </br>");
+ }
+
+ }
+
+ ////////////////////////////////
+
+// while döngüüs: bir koşul tamamlana kadar döner
+
+// while (i<=10){ documen.wtie(i); i++;   }
+
+
+ // for ın döngüsü  dizi elemanları döndümrke için kullanılır
+
+ var kurslar = {kurs1:"php",kurs2:"bootsrap"};
+
+ for (AHMET in kurslar) {
+ 	document.write(kurslar[AHMET]);
+
+
+
+ }
+
+
+
+
+
+
+
+
+
+var dersler ;
+
+dersler  =new Array("hey","gidi","kara","deniz",5);
+
+// document.write(dersler);
+
+document.write("<br>"+dersler[2] + "<br>" );
+
+
+
+for (i=0; i<=4; i++) {
+
+	document.write(dersler[i] + "<br>");
+	
+}
+
+
+for (key in dersler){
+
+	document.write(dersler[key]+ "<br>");
+}
+
+
+//çok boyutlu eleman
+
+/* var kurslar1  = new Array("php","ahmet");
+
+var = new Array(2);
+
+
+kurslar1[0][0]="mehmet deli";
+kurslar1[0][1]="mehmettt deli";
+kurslar1[0][2]="mehmettt deli";
+
+
+for(i=0; i<2; i++){
+
+	kurslar1[i]=new Array(2);
+
+
+
+}
+
+for (var i=0; i<2; i++) {
+
+document.write(kurs[i][y] + "<br>");
+
+
+	
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//toString VİRGÜLLE AYRILMIŞ BİR ŞEKİLDE GEİTİR.
+
+//join de neyle ayrılması gerektiğini seçersin
+
+// pop son öğesini gösteiri
+// push dizini sonuna eleman ekler 
+// shift ilk ögesini kaaldırır
+// unshift başa yeni ekler 
+// splice diziye eleman ekler
+// delete silme işlem i
+//concat dizileri tek bir dizi yapar 
+//slice belirttiğimiz indix numaraları ayırırız
+// length diznin eleman sayısını verir
+// reverse ters çevirerek yazdırır
+//sort diznin elemanlarını alfabetik olarak sıralaer
+// indexof dizi elemanın indis değerini veriri
+// some dizi eleemanları kontrol eder true yada false
+
+
+var selamlar = new Array ("selamun","aleykum","hi");
+var merhabalar  =new Array ("tamam","oldu ");
+
+//document.write(selamlar.toString());
+//document.write(selamlar.join("-"));
+//document.write(selamlar.pop());
+//document.write(selamlar.push("berat"));
+//document.write(selamlar.shift());
+//document.write(selamlar.unshift("gul"));
+//selamlar.splice(1,0,"deli","meli");
+ //delete selamlar[1];
+//var birlesme = selamlar.concat(merhabalar);
+//ayir=merhabalar.slice(1);
+//document.write(selamlar.length);
+// selamlar.sort()
+//document.write(selamlar.indexOf("selamun"));
+
+
+
+
+
+
+
+//// fonskiyonlar
+
+function topla(sayi2,sayi1) {
+	 
+
+	document.write(sayi2-sayi1);
+}
+
+ topla(2023,1966);
+
+
+
+
+ var islem1 = function (yap1) {
+ 	
+ 	yap1(30+20);
+ }
+
+ var islem2  =function(yap2){
+
+ 	document.write(10+yap2);
+ }
+
+ islem1(islem2);
+
+
+
+var i = 0 ; sonuc=0;
+function tekrarla (param ){
+
+
+	if (i<param) {
+		sonuc+=i;
+		i++;
+		document.write("<br>" + (sonuc+i) );
+		tekrarla(param);
+	}
+}
+
+tekrarla(5);
+
+
+
+
+
+
+
+// encodeURI
+//decodeURI
+//eval  = değeri neyse onu çevirir 
+//infinite =
+//İsnan = sayı geçerszse true döndürür
+//number = nesne değerleri rakam yapar
+//parseFloat = string i float yapar
+//parseınt = 
+//string  = string veri türü yapar
+
+
+ var url ="my.test.html½#$½#$#$djjdsterkoghkf=mmdasjsüpoj"
+
+document.write(encodeURI("<br>" + url + "<br>"));
+document.write(decodeURI( "<br>" + url + "<br>" ));
+
+
+
+
+var c  ="234,36"
+var a  = 10 ; 
+
+var b = 20 ;
+
+var c=eval("a+b");
+
+document.write(c + "<br>");
+
+document.write(typeof Number(c)+ c + "<br>");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</head>
+
+</html>

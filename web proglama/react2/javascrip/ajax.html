@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<div id="sonuc"></div>
+	<script type="text/javascript">
+		
+var xhttp  = new XMLHttpRequest();
+
+console.log(xhttp);
+
+xhttp.open("GET","https://vue-resource-52084",true);
+xhttp.send();
+
+xhttp.onreadystatechange=function(){
+
+	if (this.readyState==4 && this.status==200) {
+
+		document.getElementById("sonuc").innerHTML=responseText;
+	}
+}
+
+/*if (window.XMLHttpRequest) {
+
+
+	alert("sorun yok kaptan")
+  } 
+  */
+
+
+		
+	</script>
+
+</body>
+</html>

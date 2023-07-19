@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JS Eğitimi</title>
+
+	<style type="text/css">
+
+
+
+
+</style>
+
+</head>
+<body>
+
+		<a id="udemy">Udemy sitesine git</a>
+
+		<button type="button" onclick="islem()">Ekle</button>
+		<button type="button" onclick="targetEkle()">Target Ekle</button>
+
+	<script type="text/javascript">
+		
+	/*
+	attiributes,setAttribute,hasAttribute
+	*/
+
+	function islem(){
+
+
+		document.getElementById("udemy").setAttribute("href","https://www.udemy.com")
+
+		var e = document.getElementById("udemy").attributes;
+		console.log(e)
+
+
+
+	}
+
+
+	function targetEkle(){
+
+
+		var y=document.getElementById("udemy");
+		console.log(y);
+
+		console.log(y.hasAttribute("target"));
+
+		if (!y.hasAttribute("target")) {
+
+
+			y.setAttribute("target","_blank")
+		}
+
+	}
+
+
+	
+
+</script>
+</body>
+</html>

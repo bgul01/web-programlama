@@ -1,0 +1,112 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<p id="merhaba"> merhaba</p>
+
+
+<!-- <button onclick="yazdir()" > yazdır</button> -->
+
+<!-- <button onclick="window.print()" > yazdır</button> -->
+
+
+
+<button onclick="this.innerHTML=Date()">butonu tarih yapacak tıkla bak </button>
+
+<p id="demo1"></p>
+
+<p id="demo5"></p>
+<p id="day"></p>
+
+    <script text="JavaScript" type="text/JavaScript">
+  
+        document.getElementById("merhaba").innerHTML = "My First JavaScript";
+
+        // document.write("merhaba dünya")
+        // alert("aman ha ")
+// function yazdir() {
+
+    
+//     window.print()
+    
+// }
+
+const otomobil = {name:"ford", 
+model:"car", 
+engine:"1.6",
+
+fullname: function () {
+    return this.name +  " " + this.engine;
+    
+}
+
+
+
+}
+
+console.log(otomobil["engine"]);
+document.write(otomobil.name)
+document.write(otomobil.fullname())
+
+
+
+let text = "Apple, Banana, Kiwi";
+let part = text.slice(0,13);
+
+document.getElementById("demo1").innerHTML = part; 
+
+
+const myArray  = [15,35,75]
+
+
+ const myarray2 = myArray.map(myfunciton)
+
+document.getElementById("demo5").innerHTML=myarray2
+
+function myfunciton(value,index,array) {
+
+    return index*2;
+    
+}
+
+switch (new Date().getDay()) {
+    case 0:
+    document.getElementById("day").innerHTML= "pazar"
+        
+        break;
+        case 1:
+    document.getElementById("day").innerHTML= "pazar"
+        
+        break;
+        case 2:
+    document.getElementById("day").innerHTML= "pazar"
+        
+        break;
+        case 3:
+    document.getElementById("day").innerHTML= "pazar"
+        
+        break;
+        case 4:
+    document.getElementById("day").innerHTML= "pazar"
+        
+        break;
+        case 5:
+    document.getElementById("day").innerHTML= "pazar"
+        
+        break;
+
+    
+        break;
+}
+
+
+
+    </script>
+</body>
+</html>

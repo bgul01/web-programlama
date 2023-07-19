@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<script type="text/javascript" text = "javascript">
+	
+// length metodu bie karakter sayısını veir
+
+	var e="merhaba dünyalı nasılsın";
+
+	document.write(e.length + "<br>");
+
+//indexOf İNDEX NUMARASINI VERİRİ
+
+
+	document.write(e.indexOf("nasılsın" )+ "<br>");
+
+// lastindexOf son değeri verir
+
+	// search indexof giib aynıdır 
+	document.write(e.search("nasılsın")+ "<br>");
+
+	//substr belirlediğiniz karakterden sonrasını yazdırır
+
+	document.write(e.substr(2)+ "<br>");
+
+
+
+// replace() ifadeyi değiştirir
+
+document.write(e.replace("nasılsın","iyi misinn ?")+ "<br>");
+
+
+ //toLowerCase()
+
+
+ document.write(e.toUpperCase()+ "<br>");
+
+
+ //concat birleştirme isişine yarar
+
+ var a = "mehemt";
+ var b = "leyla";
+
+
+ document.write(a.concat(" ",b)+ "<br>");
+
+ // split bir öğeyi diziye çevirir
+
+
+
+ var m  = "merhaba dünyalı kardeş ";
+
+   var dizi  =m.split(" ");
+
+   document.write(dizi+ "<br>");
+   console.log(dizi+ "<br>");
+
+
+
+   //getDate 
+   // getDay 
+   // getMonth ay sıfırdan başlar
+   //getFullYear
+   //getHours
+
+
+   //setDate
+   //setFullYear
+   //setMonth
+   //getHours
+   //getMinutes
+
+   var tarih = new  Date();
+
+   tarih.setFullYear(1998);
+
+   document.write(tarih.getDate()+ "<br>");
+   document.write(tarih.getDay()+ "<br>");
+     document.write(tarih.getMonth()+ "<br>");
+     document.write(tarih.getFullYear()+ "<br>");
+
+ document.write(tarih.getHours()+ "<br>");
+</script>
+</body>
+</html>

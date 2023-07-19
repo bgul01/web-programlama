@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	<button onclick="islem()">YENİ PENCERE AÇ</button>
+	<input id="sayi1" type="text" name="">
+	<input id="sayi2" type="text" name="">
+
+
+	<button onclick="kapat()">kapat</button>
+
+	<button onclick="islem1()">TIKLAs</button>
+	<div id="sonuc"></div>
+
+	<button onclick=" olustur()">sessions olsutur</button>
+	<button onclick=" oku()">sessions oku</button>
+		<button onclick=" sil()">sil</button>
+
+		<button onclick=" hepsil()">shespini sil oku</button>
+
+	<div id="sonuc2"></div>
+<script type="text/javascript">
+	
+	var yenipencere;
+	function islem() {
+
+		var sayi1= document.getElementById("sayi1").value;
+		var sayi2= document.getElementById("sayi2").value;
+
+		var topla  =parseInt(sayi1) +parseInt(sayi2);
+
+	 yenipencere = window.open("","yenipencere","with=250","height=500");
+
+		yenipencere.document.write("<h1>toplama işlsemi sonucu .:"+topla+" </h1>");
+	}
+
+	function kapat() {
+
+		if (yenipencere) {
+
+
+		yenipencere.close();
+		document.write("pencere kapatıldı");
+
+	}else{
+
+		document.write("kapatılacak pencere yok gerizakalı");
+
+
+	}
+	}
+
+
+	//innerWith
+
+
+	function islem1() {
+		var w = window.innerWidth;
+		var h = window.innerHeight;
+		document.getElementById("sonuc").innerHTML="width : "+w+" - "+" height:"+h;
+	}
+
+	function olustur() {
+		sessionStorage.setItem("ad","emrha");
+	}
+
+	function oku() {
+		document.getElementById("sonuc2").innerHTML=sessionStorage.getItem("ad");
+	}
+
+	function sil() {
+		sessionStorage.removeItem("ad");
+	}
+
+	function hepsil() {
+		sessionStorage.clear();
+	}
+
+
+
+	// sayfalarınızı ifarme ile çekilmesini istemiyorsanuz
+
+	if (window.top != window.self) {
+       
+       
+		alert("iframe ile çekilemez");
+	}
+
+</script>
+</body>
+</html>

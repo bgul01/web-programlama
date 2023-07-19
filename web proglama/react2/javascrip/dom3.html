@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+<button onclick="tıkla()">tıkla</button>
+<div id="sonuc"></div>
+
+
+
+
+
+
+<input onkeydown="islem()" type="text" name="">
+<br>
+
+<div id="sonuc2"></div>
+
+
+<input id="sec" onkeyup="up()" type="" name="">
+
+<br>
+
+
+<input onkeydown="islem2()" type="text" name="">
+
+<div id="sonuc5"></div>
+
+<script type="text/javascript">
+	
+	function tıkla() {
+
+		document.getElementById("sonuc").innerHTML= event.detail;
+	}
+
+
+i=0;
+	function islem() {
+		//console.log("olay oldu");
+	
+		i+=1;
+
+		document.getElementById("sonuc2").innerHTML=i;
+	}
+
+	function up(argument) {
+		document.getElementById("sec").style.backgroundColor="red";
+	}
+
+
+	function down(argument) {
+		// body...
+	}
+
+	function islem2() {
+
+		var x = document.getElementById("sonuc5");
+
+		if (event.altkey) {
+
+			x.innerHTML="alt tuşuna basıldı";
+
+
+		}else {
+
+			x.innerHTML="alt tusuan bas";
+		}
+		// body...
+	}
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JS Eğitimi</title>
+
+	<style type="text/css">
+		
+		#emrah {
+
+			color:green;
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<p id="udemy">Udemy Kursları</p>
+
+	<input id="adgir" type="text" placeholder="Adınızı Girin" name="">
+	<br><br>
+	
+	<input id="sec" type="checkbox" name=""> Seçim Yap
+	<br><br>
+	<button id="islem" onclick="renklendir()">Id değiştir</button>
+	<button id="secimYap" onclick="secimYap()">İşaretle</button>
+
+
+
+
+
+
+	<script type="text/javascript">
+		
+	/*
+	getElementById
+	*/
+	console.log(document.getElementById("udemy"));
+
+	function renklendir(){
+
+		document.getElementById("udemy").id="emrah";
+		document.getElementById("adgir").placeholder="Soyadınızı Girin";
+	}
+
+	function secimYap(){
+
+		document.getElementById("sec").checked=false;
+	}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{
+    "courses":[
+        { "id" :1,         
+     
+         "title":"Kazak",
+         "price":69
+    },
+    {    "id" :2,        
+         "title":"Çanta",
+         "price":69
+    },
+    {    "id" :3,       
+         "title":"Çanta",
+         "price":69
+    },
+    {    "id" :4,        
+         "title":"mont",
+         "price":69
+    },
+    {    "id" :5,       
+         "title":"hırka",
+         "price":0
+    }
+    ]
+}

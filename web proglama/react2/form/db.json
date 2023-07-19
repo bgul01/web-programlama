@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "email": "bgul0002@gmail.com",
+      "password": "$2a$10$irDkQXA15d.I/CLPAiFqzOlR4xe.5ikBGc2lCa4h/M0e6BpcR125q",
+      "username": "BGUL0002@gmail.com",
+      "id": 1
+    },
+    {
+      "email": "b.gul93@gmail.com",
+      "password": "$2a$10$p6G.nzayyqabF78Q4lKke.aGeBBKbuf4KT6v6hQlpVUJdldjZayc6",
+      "username": "5072709753",
+      "id": 2
+    },
+    {
+      "email": "bgul534534@gmail.com",
+      "password": "$2a$10$l8XIDla8bYja.VH.2vjWdewmCLVOKgIlyj8XvE9tEhJVIAuDMAcFy",
+      "username": "merhaba",
+      "id": 3
+    }
+  ]
+}

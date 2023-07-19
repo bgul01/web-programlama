@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	<h1 onclick="icerikdegis(this)">merhaba dünylı</h1>
+
+<input id="sayi1" type="text" name="">
+<input id="sayi2" type="text" name="">
+
+<button class="topla()">topla</button>
+
+ <p id="sonuc"></p>
+
+
+ <button onclick="islem()">onayla</button>
+ <div id="onay"></div>
+ <br>
+
+
+ <button ondblclick="cift()">çift tıkla</button>
+<br>
+<button oncontextmenu="sagtik()">sağ</button>
+
+<br>
+<button onmouseenter="uz()">uzerine gel</button>
+
+
+<br>
+
+<button onmouseleave="ay()">ayrıl</button>
+
+
+<div onmouseover="geldi(this)"  onmouseleave="gitti(this)" style="background: red;width: 500px; height: 250px;">rewr</div>
+
+
+
+
+
+
+<script type="text/javascript" language="javascript">
+	function icerikdegis(icerik) {
+		icerik.innerHTML="udemy kursları";
+	}
+ 	
+ 	function topla() {
+ 	  
+ 	  var b =parseInt(document.getElementById("sayi1").value) ;
+ 	  var a  =parseInt(document.getElementById("sayi2").value);
+
+ document.getElementById("sonuc").innerHTML  = b-a;
+
+ 	    
+
+ 	 
+
+
+ 	
+ 	}
+
+ 	// confirm 
+
+function islem() {
+
+	var m = confirm("onaylıyormusun ");
+
+	if (m==true) {
+		document.getElementById("onay").innerHTML="onay verildi"
+	}else{
+
+		document.getElementById("onay").innerHTML="onay verilmedi"
+
+
+	}
+}
+
+
+
+
+
+
+//onDblClikc aynı neseye iki kere tıklanınca çalışcaks
+
+ 	
+function cift() {
+
+	alert("bir kere bas!");
+}
+
+
+//oncontextmenu 
+
+
+function sagtik() {
+
+	alert("kopyalama yasak!");
+}
+
+
+
+
+//onmouseenter mousenin üzerine geline calsıır 
+
+function uz() {
+
+	alert("uzerıne geldin!");
+}
+
+//onmouselleave ayrıdılınca çalışır 
+function ay() {
+
+	alert("ayrdılın!");
+}
+
+
+
+
+//onload sayfa tamamen yüklendiğinde çalışır
+
+function yuklendi () {
+
+alert("sayfa yüklendi ");
+
+}
+
+window.onload=yuklendi; // bunu body alanaınada yazabilrisin
+
+function geldi(para1) {
+
+	para1.innerHTML="fare geldi"
+	// body...
+}
+
+function gitti(para2) {
+
+	para2.innerHTML="hitti"
+	// body...
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

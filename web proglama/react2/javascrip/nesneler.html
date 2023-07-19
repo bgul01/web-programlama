@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	<script type="text/javascript" text="javascript">
+		
+
+/*
+ var araba  ={
+
+ 	marka : "ford",
+ 	renk : "gri",
+ 	yil : "2004",
+ 	km : "23423"
+
+ }
+ */
+
+
+ function araba(marka,renk,km,yil) {
+
+  this.markasi = marka,
+  this.rengi = renk,
+this.kmsi  = km, 
+this.yili  = yil 
+
+ }
+
+
+var araba1  = new araba("ford","gri","15255","2005");
+
+araba.prototype.fiyat=2000; // ek özellik ekler
+
+console.log(araba1);
+
+ var emrah  = new Object();
+
+ emrah.tc  = 12323234;
+ emrah.boy ="256"
+
+
+document.write(emrah.tc); // .tc nesnenin alt dizisine ulaşıldı
+
+
+
+
+
+
+
+/// nesnelere metod tanımlama
+
+
+
+		var ogrenci   = {
+
+			ad: "ahmet",
+			soyad :"yüksel",
+			yas : 32,
+
+			adsoyad: function(){
+
+				return this.ad + "" +this.soyad;
+			}
+		}
+
+		document.write("<br>"+ogrenci.adsoyad() +  "<br>");
+
+
+ console.log( ogrenci);
+
+	</script>
+
+</body>
+</html>

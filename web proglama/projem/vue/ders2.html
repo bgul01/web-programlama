@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+
+<div id="app">
+  
+  
+  <p> {{ name }} </p>
+  <input type="text" v-model="name"> <!---- v model direk ceker-->
+<button v-on:click="increase">artır</button>
+<p>{{ counter }}</p>
+<p>{{ result }}</p>
+</div>
+
+<script type="text/javascript">
+  new Vue({
+  el : "#app",
+  data : {
+
+    name:"gökhan",
+    counter:0,
+  result :""
+  
+  },
+
+  methods :{
+
+    increase:function () {
+      this.counter++;
+      this.result= this.counter > 10 ? "10 dan büyüktür" :"10 dan kuçüktür";
+    }
+  }
+  
+})
+</script>
+
+</body>
+</html>

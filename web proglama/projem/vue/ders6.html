@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+
+
+
+<div id="app">
+  <my-comp></my-comp>
+</div>
+
+
+
+<script type="text/javascript">
+
+Vue.component('my-comp', {
+
+  data:function() {
+
+    return {
+
+      status:"pasif"
+    }
+
+  },
+
+    template:'<p> sunucu durumu :{{status}} </p>'
+  
+});
+
+
+new Vue({
+  el: '#app',
+  
+
+
+  
+});
+</script>
+
+</body>
+</html>

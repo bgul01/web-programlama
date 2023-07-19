@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+
+<style type="text/css">
+	
+
+</style>
+
+</head>
+
+
+<body>
+
+	<p id="udemy" >udemy kurslar</p>
+
+	<input id="yazi" type="text" placeholder="adını gir" name="">
+
+	<button id="buton1" onclick="renklendir()">ıd değiştir bas</button>
+
+	<hr>
+
+
+ 	<p>udeym</p>
+ 	<p>udeym</p>
+ 	<p>udeym</p>
+ 	<p>udeym</p>
+
+
+
+
+<p class="udemy">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+</p>
+
+<button onclick="console.log(document.getElementsByClassName('udemy'))">seç</button>
+ <!---- buradaki gibi yazabilirsin --->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p id="hey">merahaba dünyalı</p>
+<input type="button" onclick="dik()" value="değiştir" name="">
+
+	<script type="text/javascript">
+		
+
+		//getElementById
+
+		function renklendir() {
+			document.getElementById("udemy").id="emrah";
+			document.getElementById("yazi").placeholder="e mail gir";
+			
+		}
+
+
+// getElementsTagNaME
+
+		//console.log(document.getElementsByTagName("p")[2]);
+
+		console.log(document.getElementsByTagName("p"));
+
+
+//getElementByClassName
+
+
+
+// ------------------------------------------------------
+
+// style ile müdaha  etme
+
+function dik() {
+
+	document.getElementById("hey").style.backgroundColor="red";
+	
+}
+
+
+
+
+
+
+
+
+
+
+	</script>
+
+</body>
+</html>

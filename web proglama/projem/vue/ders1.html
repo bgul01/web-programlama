@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+
+<div id="app">
+  
+  
+  <p> {{ counter }} </p>
+  <button v-on:click="changeTitle">fdgdfg</button>
+  <button v-on:click="artir" >artımak</button>
+  <button v-on:click="azalt" >azaltmak</button>
+</div>
+
+<script type="text/javascript">
+  new Vue({
+  el : "#app",
+  data : {
+
+    
+    counter :0
+  },
+  methods : {
+    changeTitle : function(){
+      alert('shdskfh');
+    },
+
+    artir : function(){
+      this.counter++;
+    },
+
+    azalt: function () {
+      this.counter--;
+    }
+
+  }
+})
+</script>
+
+</body>
+</html>

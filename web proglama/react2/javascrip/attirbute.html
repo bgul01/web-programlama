@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+
+<a id="udemy">udemye gir</a>
+<button type="button" onclick="islem()">link</button>
+
+x
+<br>
+
+
+
+<button onclick="ekle()">ekle</button>
+
+<br>
+
+
+
+<ul id="list1">
+	<li>mey</li>
+	<li>mey</li>
+	<li>mey</li>
+	<li>mey</li>
+	<li>mey</li>
+</ul>
+
+<button onclick="sil()">sil</button>
+<button onclick="ekle1()">ekle</button>
+<button onclick="degis()">değiştir</button>
+
+<script type="text/javascript">
+	
+	function islem (){
+
+
+		document.getElementById("udemy").setAttribute("href","https://www.youtube.com");  
+		document.getElementById("udemy").setAttribute("target","_blank");  
+	}
+
+
+
+
+
+//createElement 
+
+	function  ekle () {
+
+		var e = document.createElement("p");
+
+		console.log(e);
+		
+
+		}
+
+
+		// removeChild elemanları siler
+
+
+
+		function sil () {
+
+			var list  = document.getElementById("list1");
+			list.removeChild(list.childNodes[1])
+
+			
+		}
+
+
+		//appenChild içerik  eklemedir
+function ekle1(){
+
+		var eb=document.createElement("LI");
+		console.log(eb);
+		var x=document.createTextNode("Wordpressss");
+		console.log(eb);
+		eb.appendChild(x);
+		console.log(eb);
+		document.getElementById("list1").appendChild(eb);
+
+
+	}
+
+//replaceChild değiştirme 
+
+
+		function degis(){
+
+		var t=document.createTextNode("Emrah");
+		console.log(t);
+		var ekles=document.getElementById("list1").childNodes[1];
+		console.log(ekles);
+		ekles.replaceChild(t,ekles.childNodes[0])
+
+	}
+
+</script>
+</body>
+</html>

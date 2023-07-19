@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	<button onclick="islem()">bas</button>
+<script type="text/javascript">
+	
+function islem() {
+
+	var veriler = {
+		ad :"emrha",
+		soyad: "ogun"
+	}
+
+	var hazir = JSON.stringify(veriler);
+	window.location="json-oku.php?veri=" + hazir;	
+}
+	 
+	/* var obj,e;
+
+	 obj ={
+
+	 	"ad":"emrah",
+	 	"soyad":"deli",
+	 	"sehir":"istanbul",
+	 	"kurum":"udemy"
+	 }
+
+	 */
+
+/*
+	 console.log(obj);
+
+	  for (key in obj) {
+
+	 	console.log(obj[key]);
+	 	
+	 } */ 
+
+
+</script>
+</body>
+</html>
